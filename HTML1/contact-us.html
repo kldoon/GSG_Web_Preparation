@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact The Green Store</title>
 </head>
+
 <body>
   <h1>Contact The Green Store</h1>
+  <form action="" method="post">
+    <div>
+      <label for="fname">First Name:</label>
+      <input id="fname" name="fname" type="text" required />
+    </div>
+    <div>
+      <label for="lname">Last Name:</label>
+      <input id="lname" name="lname" type="text" required />
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input id="password" name="password" type="password" required />
+    </div>
+    <div>
+      <label for="user-email">Email:</label>
+      <input id="user-email" name="email" type="email" />
+    </div>
+    <div>
+      <label for="age">Age:</label>
+      <input id="age" name="age" type="number" max="120" min="13" />
+    </div>
+    <div>
+      <label for="mobile">Mobile Number:</label>
+      <input id="mobile" name="mobile" type="tel" />
+    </div>
+    <div>
+      <label for="message">Your Message:</label><br />
+      <textarea id="message" rows="10" cols="50"></textarea>
+    </div>
+    <div>
+      <input type="submit" value="Send my message" />
+      <input type="reset" value="Clear all inputs" />
+    </div>
+  </form>
 </body>
+
 </html>
