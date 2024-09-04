@@ -8,40 +8,113 @@
 </head>
 
 <body>
-  <h1>Contact The Green Store</h1>
+  <h1 title="The website name">Contact The Green Store</h1>
+
   <form action="" method="post">
-    <div>
-      <label for="fname">First Name:</label>
-      <input id="fname" name="fname" type="text" required />
-    </div>
-    <div>
-      <label for="lname">Last Name:</label>
-      <input id="lname" name="lname" type="text" required />
-    </div>
-    <div>
-      <label for="password">Password:</label>
-      <input id="password" name="password" type="password" required />
-    </div>
-    <div>
-      <label for="user-email">Email:</label>
-      <input id="user-email" name="email" type="email" />
-    </div>
-    <div>
-      <label for="age">Age:</label>
-      <input id="age" name="age" type="number" max="120" min="13" />
-    </div>
-    <div>
-      <label for="mobile">Mobile Number:</label>
-      <input id="mobile" name="mobile" type="tel" />
-    </div>
-    <div>
-      <label for="message">Your Message:</label><br />
-      <textarea id="message" rows="10" cols="50"></textarea>
-    </div>
-    <div>
-      <input type="submit" value="Send my message" />
-      <input type="reset" value="Clear all inputs" />
-    </div>
+    <table>
+      <tr>
+        <td>
+          <br>
+          <div>
+            <label for="fname">First Name:</label>
+            <input id="fname" name="fname" type="text" value="Ahmad" title="Enter your name here" required />
+          </div>
+          <br>
+          <div>
+            <label for="lname" autocomplete="off">Last Name:</label>
+            <input id="lname" name="lname" type="text" value="Saeed" required />
+          </div>
+          <br>
+          <div>
+            <label for="password">Password:</label>
+            <input id="password" name="password" type="password" value="abcd" required />
+          </div>
+          <br>
+        </td>
+        <td>
+          <br>
+          <div>
+            <label for="user-email">&nbsp;&nbsp;&nbsp;Email:</label>
+            <input id="user-email" name="email" type="email" placeholder="you@example.com" />
+          </div>
+          <br>
+          <div>
+            <label for="age">&nbsp;&nbsp;&nbsp;Age:</label>
+            <input id="age" name="age" type="number" max="120" min="13" />
+          </div>
+          <br>
+          <div>
+            <label for="mobile">&nbsp;&nbsp;&nbsp;Mobile Number:</label>
+            <input id="mobile" name="mobile" type="tel" />
+          </div>
+          <br>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <div>
+            <b>Contact Reason:</b>
+            <input id="reason_return" name="reason" type="checkbox" value="Return" />
+            <label for="reason_return">Return an Item</label>
+            <input id="reason_complain" name="reason" type="checkbox" value="Complaint" />
+            <label for="reason_complain">Complaint</label>
+            <input id="reason_ask" name="reason" type="checkbox" value="Ask" />
+            <label for="reason_ask">Ask about Product</label>
+            <br>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <div>
+            <br>
+            <b>Gender:</b>
+            <input id="gender_male" name="gender" type="radio" value="male" required />
+            <label for="gender_male">Male</label>
+            <input id="gender_female" name="gender" type="radio" value="female" />
+            <label for="gender_female">Female</label>
+            <br>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <br>
+          <label for="city">City:</label>
+          <select id="city" name="city">
+            <option value="jerusalem">Jerusalem</option>
+            <option value="hebron">Hebron</option>
+            <option value="ramallah">Ramallah</option>
+            <option value="Gaza">Gaza</option>
+            <option value="Nablus">Nablus</option>
+            <option value="Jenin">Jenin</option>
+          </select>
+          <br>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <div>
+            <br>
+            <label for="message">Your Message:</label><br />
+            <textarea id="message" name="message" rows="10" cols="50"
+              placeholder="Enter your message with full details"></textarea>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <div>
+            <input type="submit" value="Send my message" />
+            <input type="reset" value="Clear all inputs" />
+          </div>
+        </td>
+      </tr>
+    </table>
+
+
+
+
   </form>
 </body>
 
