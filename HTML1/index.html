@@ -22,24 +22,28 @@
 </head>
 
 <body id="body-top">
-  <header>
-    <h1 style="color: rgb(24, 145, 2); font-size: 18px;">The Green Store</h1>
-    <img width="auto" height="50" src="./imgs/logo.png" alt="logo of the green store" />
+  <header id="main-header">
     <div>
+      <h1 style="color: rgb(24, 145, 2); font-size: 18px;">The Green Store</h1>
+    </div>
+    <img width="auto" height="50" src="./imgs/logo.png" alt="logo of the green store" />
+    <div class="shortcuts">
       <h3>Products Shortcuts:</h3>
       <nav>
-        <a href="#water-prod">Water</a>
-        <a href="#shrimps-prod">Shrimps</a>
-        <a href="#pants-prod">Pants</a>
+        <a class="button" href="#water-prod">Water</a>
+        <a class="button" href="#shrimps-prod">Shrimps</a>
+        <a class="button small" href="#pants-prod">Pants</a>
+        <span>
+          <a class="button small" href="#meats-prod">Meats</a>
+        </span>
       </nav>
     </div>
   </header>
   <main>
-    <hr>
     <section>
-      <h2>Food Section</h2>
+      <h2 class="small">Food Section</h2>
       <h3>Drinks</h3>
-      <ul style="list-style-type: square;">
+      <ul data-xyz="abc" style="list-style-type: square;">
         <li>Milk</li>
         <p>
           <i>Lorem ipsum</i> dolor <strong>sit amet</strong> consectetur adipisicing elit. Quae perspiciatis voluptatem,
@@ -68,15 +72,16 @@
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla vel earum nihil aperiam nisi aut velit libero
           maxime minima quis voluptatum porro et eveniet magnam cum alias, repellat, perferendis distinctio.</p>
       </ul>
-      <h3>Meats</h3>
-      <ul>
+      <h3 id="meats-prod">Meats</h3>
+      <ul id="meats">
         <li>Chicken</li>
         <li>Beef Meat</li>
         <li>Fish
           <ul>
-            <li>Salmon</li>
+            <li class="highlighted">Salmon</li>
             <li id="shrimps-prod">Shrimps</li>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, adipisci? Laudantium, quos fugiat
+            <p class="highlighted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, adipisci?
+              Laudantium, quos fugiat
               quod
               sint
               quia reiciendis aut nam atque. Suscipit cupiditate cumque nesciunt, voluptate iusto sunt obcaecati numquam
@@ -85,7 +90,8 @@
             <li>Cod</li>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quasi eum neque quis recusandae unde
               tempore
-              cupiditate dolor commodi, adipisci laudantium aspernatur maiores deleniti illo sint suscipit non. Eius,
+              cupiditate dolor commodi, <span class="highlighted"> adipisci laudantium aspernatur </span> maiores
+              deleniti illo sint suscipit non. Eius,
               reprehenderit?</p>
             <li>Octopus</li>
           </ul>
@@ -95,6 +101,7 @@
     <hr>
     <section>
       <h2>Clothing Section</h2>
+      <span class="button">Size Tabel</span>
       <ol style="list-style-type: lower-alpha;">
         <li>Shirts</li>
         <p>

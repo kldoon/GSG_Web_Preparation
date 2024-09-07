@@ -1,10 +1,70 @@
 /* External CSS */
+* {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+  font-size: 14px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 h3 {
   color: #13445E;
+  text-decoration: underline;
+  text-decoration-style: double;
 }
 
 p {
   font-size: 13px;
   font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+li {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+#meats {
+  color: rgb(224, 92, 92);
+}
+
+#main-header {
+  background-color: rgb(224, 245, 228);
+}
+
+.button {
+  color: #ffffff;
+  background-color: #b4663c;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-size: 13px;
+
+  display: inline-block;
+  padding: 5px 8px;
+  border: none;
+}
+
+nav {
+  background-color: #b2cbfc;
+}
+
+nav>.button {
+  background-color: #1d3d08;
+}
+
+.small {
+  font-size: smaller;
+}
+
+ul li ul .highlighted {
+  color: #13445E;
+}
+
+body>header>div.shortcuts {
+  border-bottom: 2px solid grey;
 }
