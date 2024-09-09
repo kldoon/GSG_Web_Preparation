@@ -16,15 +16,30 @@
       font-size: 25px;
       text-transform: uppercase;
     }
-  </style>
 
+
+    h1 {
+      color: red ;
+      /* color: red !important; */
+    }
+
+    h1 {
+      color: blue;
+    }
+
+    #tmp-header {
+      color: blueviolet;
+    }
+  </style>
   <link rel="stylesheet" href="./styles/style.css" />
 </head>
 
 <body id="body-top">
   <header id="main-header">
     <div>
-      <h1 style="color: rgb(24, 145, 2); font-size: 18px;">The Green Store</h1>
+      <h1 id="tmp-header" class="tmp-header-class">
+        The Green Store
+      </h1>
     </div>
     <img width="auto" height="50" src="./imgs/logo.png" alt="logo of the green store" />
     <div class="shortcuts">
