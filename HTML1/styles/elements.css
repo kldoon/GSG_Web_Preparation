@@ -1,0 +1,19 @@
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+  min-width: 160px;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #f9f9f9;
+  border: 1px solid gray;
+}
+
+.dropdown-content a {
+  display: block;
+  margin: 2px;
+}

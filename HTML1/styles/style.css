@@ -70,7 +70,7 @@ input[type="text"]:focus {
 }
 
 nav {
-  background-color: #b2cbfc;
+  /* background-color: #b2cbfc; */
 }
 
 nav>.button {
