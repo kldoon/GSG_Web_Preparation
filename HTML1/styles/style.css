@@ -107,3 +107,36 @@ h1 {
   font-weight: 400;
   font-style: normal;
 }
+
+.about-us video {
+  opacity: 0.5;
+  position: absolute;
+  top: -10px;
+}
+
+div.inline-div {
+  display: inline;
+}
+
+span.block-span {
+  display: block;
+  /* display: inline-block;
+  width: 100px; */
+
+  /*  left right  justify*/
+  text-align: center;
+
+  /* oblique */
+  font-style: italic;
+
+  text-decoration: underline;
+  text-decoration-style: dashed ;
+
+  text-transform: capitalize;
+
+  letter-spacing: 5px;
+}
+
+.test-paragraph{
+  line-height: 30px;
+}
