@@ -1,0 +1,12 @@
+.container {
+  border: 2px solid salmon;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .box {
+  width: 70px;
+  height: 70px;
+  background-color: cadetblue;
+  border: 2px solid blueviolet;
+}
