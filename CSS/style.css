@@ -71,7 +71,7 @@ div.fancy-button {
   border-left: 3px solid firebrick;
 
   box-shadow: -3px 3px 6px 0px #8b8b8b;
-  text-shadow: -2px 1px 2px #533dce;;
+  text-shadow: -2px 1px 2px #533dce;
 }
 
 div.fancy-button:active {
@@ -145,4 +145,38 @@ nav.top {
 
 nav.top>button:last-of-type {
   float: right;
+}
+
+
+/* ////////////////// Profile card */
+div.profile-card {
+  background-image: url('./imgs/pattern.jpg');
+  background-size: 20px 20px;
+  background-repeat: repeat;
+  width: 180px;
+  height: 250px;
+  border: 1px solid gray;
+  margin: 50px;
+  color: antiquewhite;
+}
+
+div.profile-card h3{
+  text-align: center;
+}
+
+div.profile-card .avatar{
+  margin: 0 auto;
+
+  height: 70px;
+  width: 70px;
+  border: 1px solid sienna;
+  background-image: url('./imgs/avatar.jpg');
+  /* background-size: cover; */
+  /* background-color: #533dce; */
+  /* background-blend-mode: exclusion; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  border-radius: 50%;
+  /* background-position: 10% 70%; */
 }
