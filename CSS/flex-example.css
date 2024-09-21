@@ -1,0 +1,94 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+nav.main {
+  background-color: gray;
+  height: 50px;
+}
+
+div.main {
+  display: flex;
+  /* border: 1px solid red; */
+  justify-content: space-around;
+}
+
+.main .left {
+  flex-basis: 60%;
+  /* border: 1px solid green; */
+}
+
+.main .left nav {
+  height: 20px;
+  background-color: #aaa;
+}
+
+.main .left .items-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 10px;
+}
+
+.main .left .items-footer {
+  background-color: #777;
+  height: 70px;
+}
+
+.items-list .item {
+  flex-basis: 30%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.items-list .item img {
+  width: 100%;
+  height: 90px;
+  background-color: #999;
+}
+
+.items-list .item h3 {
+  height: 20px;
+  width: 100%;
+  background-color: #444;
+}
+
+.main .right {
+  flex-basis: 30%;
+  display: flex;
+  /* border: 1px solid blue; */
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.main .right .banner {
+  flex-grow: 0;
+  flex-basis: 100%;
+  max-height: 220px;
+  background-color: #777;
+}
+
+.main .right .featured {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.main .right .featured h2 {
+  height: 25px;
+  background-color: #555;
+  margin: 0;
+}
+
+.main .right .featured .item img {
+  background-color: #999;
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin: 10px;
+}

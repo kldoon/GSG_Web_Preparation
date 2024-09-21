@@ -50,3 +50,17 @@ span.favorites .count {
   right: 2px;
   top: 2px;
 }
+
+div.window .content {
+  height: 245px;
+  overflow-y: scroll;
+}
+
+
+div.small-content {
+  border: 1px solid blue;
+  width: 180px;
+  height: 70px;
+  overflow: auto;
+  white-space: nowrap;   /*  Keep the text in a single line */
+}
