@@ -1,0 +1,50 @@
+html {
+  font-size: 70px;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+div.rect {
+  background-color: red;
+  width: 36.5cm;
+  height: 7cm;
+}
+
+.span-em {
+  width: 1em;
+  height: 1em;
+  background-color: green;
+  display: inline-block;
+}
+
+.span-rem {
+  /* 1rem =70px because the html element has font-size 70px */
+  width: 2rem;
+  height: 1rem;
+  background-color: blue;
+  display: inline-block;
+}
+
+.div-vw {
+  width: 100vw;
+  height: 70px;
+  background-color: brown;
+}
+
+.div-pres {
+  width: 50%;
+  height: 50px;
+  background-color: aqua;
+}
+
+.div-vh {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20%;
+  height: 100vh;
+  background-color: chartreuse;
+}
