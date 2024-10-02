@@ -1,5 +1,3 @@
-
-
 const result = calc(10, 5);
 console.log(result);
 console.log(calc(7, 3));
@@ -38,14 +36,32 @@ console.log(isPassVS(50));
 console.log(isPassVS(60));
 console.log(isPass(70));
 
-const calcAvg = (m1, m2, m3, isPassFunc) => {
-    const avg = (m1 + m2 + m3) / 3;
+const calcAvg = (marks = [], isPassFunc) => {
+    let sum = 0;
+    for (let i = 0; i < marks.length; i++) {
+        sum += marks[i];
+    }
+    const avg = sum / marks.length;
     const is_pass = isPassFunc(avg);
     console.log("Average is: " + avg + " and did the student pass: " + is_pass);
 };
 
+// Arrays
+const emptyArr = [];
+const marksArr1 = [90, 70, 60];
+marksArr1[1] = 77;
+
 // University student
-calcAvg(90, 70, 60, isPassVS);
+calcAvg(marksArr1, isPassVS);
+
+const marksArr2 = [];
+marksArr2[0] = 65;
+marksArr2.push(50);   // Add element to the end of the array
+marksArr2.unshift(50);   // Add element to the beginning of the array
+
 
 // School student
-calcAvg(65, 50, 57, isPass);
+calcAvg(marksArr2, isPass);
+
+// You can have array with multiple data types
+//  [90, 70, 60, "apple", true, null];
