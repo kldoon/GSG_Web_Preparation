@@ -48,6 +48,7 @@ const calcAvg = (marks = [], isPassFunc) => {
 
 // Arrays
 const emptyArr = [];
+// const emptyArr2 = new Array(1, 2, 3, 4);    //Another way to create arrays
 const marksArr1 = [90, 70, 60];
 marksArr1[1] = 77;
 
@@ -65,3 +66,48 @@ calcAvg(marksArr2, isPass);
 
 // You can have array with multiple data types
 //  [90, 70, 60, "apple", true, null];
+
+
+const multiDArray = [[1, 2, 3], ['A,B,C'], [true, false], [10, 22, 30, 40, 50]];
+
+console.log(multiDArray);
+console.log(multiDArray.length)
+
+const students = [
+    ['Ahmad', 'Hiba', 'Saeed'],
+    [90, 80, 70]
+];
+
+let cities = ['Jerusalem', 'Ramallah', 'Jenin', 'Nablus', 'Betlehem', 'Tulkarm', 'Qalqilia', 'Jericho'];
+const cities2 = cities;  // This will not create another array, it only will create another pointer to the same array
+// const cities3 = [...cities];  // This will create a new array and copy all items from the first array
+const cities3=[...cities];
+
+cities.push('Hebron');
+cities.unshift('Gaza');
+console.log(cities.toString());
+console.log(cities2.toString());
+console.log(cities3.toString());
+
+const city1 = cities.shift();   // remove and return the first element of array
+const city2 = cities.pop();   // remove and return the last element of array
+// const city3 = cities[cities.length - 1];   // alternative solution, without deletion
+// delete cities[cities.length - 1];
+
+console.log(city1);
+console.log(city2);
+console.log('*************************');
+
+console.log(cities.toString());
+// console.log(city3);
+cities.splice(1, 2, 'Tubas');
+
+console.log(cities.toString());
+
+const newCities = cities.slice(2, 5);    // Return from the third element to fifth element
+console.log("New Cities: ", newCities.toString());
+console.log(cities.toString());
+
+const otherCities = ['Haifa', 'Yaffa', 'Beershiva'];
+cities = cities.concat(otherCities);
+console.log(cities.toString());
