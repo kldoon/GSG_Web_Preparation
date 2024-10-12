@@ -1,0 +1,168 @@
+body {
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color: #2b2b2b;
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  height: 95vh;
+  border: 1px solid #a3a3a3;
+  display: flex;
+  flex-direction: column;
+}
+
+nav.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #dedede;
+}
+
+ul.actions {
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  list-style-type: none;
+  font-size: 20px;
+  column-gap: 10px;
+}
+
+/************** Posts List ********/
+.gradient-box {
+  box-sizing: border-box;
+  max-width: 43.5px;
+  max-height: 43.5px;
+  color: #FFF;
+  background-clip: padding-box;
+  position: relative;
+  border: solid 2px transparent;
+  border-radius: 50%;
+}
+
+.gradient-box:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -2px;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #dd0147, #f8a24b);
+}
+
+main.list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  overflow: auto;
+  height: 100%;
+}
+
+main.list .post:first-of-type {
+  margin-top: 20px;
+}
+
+main.list .post:last-of-type {
+  margin-bottom: 20px;
+}
+
+main.list .post {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.post header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.post header .av-title {
+  display: flex;
+  align-items: center;
+}
+
+.post header .av-title .title {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+.post header .av-title .title .name {
+  font-weight: 600;
+}
+
+.post header .av-title .title .subtitle {
+  color: #282828;
+}
+
+.post header .av-title img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.post header button {
+  all: unset;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+/*** Post content ****/
+.post .content img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.post .content p {
+  margin-top: 5px;
+  padding: 0 5px;
+  margin-bottom: 5px;
+}
+
+.post .content p a.hash {
+  text-decoration: none;
+  color: #274e8a;
+  font-weight: 600;
+}
+
+.post .actions {
+  margin: 0 10px;
+}
+
+.post .actions li:last-child {
+  margin-left: auto;
+}
+
+
+
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b9b9b9;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #8e8e8e;
+}
