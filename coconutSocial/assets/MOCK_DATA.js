@@ -1,4 +1,4 @@
-[
+const DATA = [
   {
     "id": 1,
     "author": {
@@ -20,7 +20,7 @@
     },
     "img": "http://dummyimage.com/411x759.png/dddddd/000000",
     "desc": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
-    "likesCount": 533126,
+    "likesCount": 0,
     "time": "09/28/2024"
   },
   {
@@ -44,7 +44,7 @@
     },
     "img": "http://dummyimage.com/658x632.png/5fa2dd/ffffff",
     "desc": "In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\n\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.",
-    "likesCount": 578907,
+    "likesCount": 0,
     "time": "03/17/2022"
   },
   {

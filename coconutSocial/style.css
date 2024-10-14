@@ -126,7 +126,7 @@ main.list .post {
 
 .post .content p {
   margin-top: 5px;
-  padding: 0 5px;
+  padding: 0 10px;
   margin-bottom: 5px;
 }
 
@@ -136,8 +136,27 @@ main.list .post {
   font-weight: 600;
 }
 
+.post .content .likes-date {
+  padding: 0 10px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.post .content .likes-date .likes-count {
+  margin-right: 20px;
+}
+
+.post .content .likes-date .date {
+  font-size: 9px;
+  color: #666;
+}
+
 .post .actions {
   margin: 0 10px;
+}
+
+.post .actions li {
+  cursor: pointer;
 }
 
 .post .actions li:last-child {
@@ -145,7 +164,18 @@ main.list .post {
 }
 
 
-
+/**    Add Modal    **/
+#addModal {
+  position: fixed;
+  top: 50px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 2px solid #2b2b2b;
+  width: 330px;
+  height: 50vh;
+  z-index: 2;
+}
 
 /* custom scrollbar */
 ::-webkit-scrollbar {

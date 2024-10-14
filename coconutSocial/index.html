@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
+  <script src="./assets/MOCK_DATA.js"></script>
 </head>
 
 <body>
@@ -25,6 +26,22 @@
         <li><i class="fa-regular fa-paper-plane"></i></li>
       </ul>
     </nav>
+    <div id="addModal">
+      <h3>Add New Post</h3>
+      <form>
+        <div>
+          <label for="img-input">Post Image</label><br>
+          <input id="img-input" type="text" name="image" />
+        </div>
+        <br>
+        <div>
+          <label for="desc-input">Post Description</label><br>
+          <textarea id="desc-input" name="desc" rows="10"></textarea>
+        </div>
+        <button type="button" onclick="addNewPost()">Submit</button>
+        <input type="reset" value="Clear" />
+      </form>
+    </div>
     <main id="post-list" class="list">
 
     </main>
