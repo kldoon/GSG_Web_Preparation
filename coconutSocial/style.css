@@ -31,6 +31,10 @@ ul.actions {
   column-gap: 10px;
 }
 
+ul.actions li {
+  cursor: pointer;
+}
+
 /************** Posts List ********/
 .gradient-box {
   box-sizing: border-box;
@@ -155,17 +159,13 @@ main.list .post {
   margin: 0 10px;
 }
 
-.post .actions li {
-  cursor: pointer;
-}
-
 .post .actions li:last-child {
   margin-left: auto;
 }
 
 
 /**    Add Modal    **/
-#addModal {
+.modal-content {
   position: fixed;
   top: 50px;
   margin: 10px;
@@ -174,7 +174,32 @@ main.list .post {
   border: 2px solid #2b2b2b;
   width: 330px;
   height: 50vh;
-  z-index: 2;
+  z-index: 20;
+}
+
+#addModal {
+  display: none;
+}
+
+#addModal.shown {
+  display: block;
+}
+
+.modal-content .close-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#addModal .backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* custom scrollbar */

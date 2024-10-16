@@ -90,4 +90,10 @@ const addNewPost = () => {
 
   DATA.unshift(newPost);
   renderAllPosts();
+  toggleModal();
+}
+
+const toggleModal = () => {
+  const modalElement = document.getElementById("addModal");
+  modalElement.classList.toggle("shown");
 }

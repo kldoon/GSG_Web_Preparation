@@ -22,25 +22,29 @@
       <img src="imgs/logo.png" alt="logo" height="30">
       <ul class="actions">
         <li><i class="fa-regular fa-heart"></i></li>
-        <li><i class="fa-regular fa-square-plus"></i></li>
+        <li onclick="toggleModal()"><i class="fa-regular fa-square-plus"></i></li>
         <li><i class="fa-regular fa-paper-plane"></i></li>
       </ul>
     </nav>
-    <div id="addModal">
-      <h3>Add New Post</h3>
-      <form>
-        <div>
-          <label for="img-input">Post Image</label><br>
-          <input id="img-input" type="text" name="image" />
-        </div>
-        <br>
-        <div>
-          <label for="desc-input">Post Description</label><br>
-          <textarea id="desc-input" name="desc" rows="10"></textarea>
-        </div>
-        <button type="button" onclick="addNewPost()">Submit</button>
-        <input type="reset" value="Clear" />
-      </form>
+    <div id="addModal" class="">
+      <div class="backdrop"></div>
+      <div class="modal-content">
+        <span onclick="toggleModal()" class="close-button"><i class="fa-regular fa-solid fa-x"></i></span>
+        <h3>Add New Post</h3>
+        <form>
+          <div>
+            <label for="img-input">Post Image</label><br>
+            <input id="img-input" type="text" name="image" />
+          </div>
+          <br>
+          <div>
+            <label for="desc-input">Post Description</label><br>
+            <textarea id="desc-input" name="desc" rows="10"></textarea>
+          </div>
+          <button type="button" onclick="addNewPost()">Submit</button>
+          <input type="reset" value="Clear" />
+        </form>
+      </div>
     </div>
     <main id="post-list" class="list">
 
