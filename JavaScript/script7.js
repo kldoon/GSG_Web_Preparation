@@ -11,6 +11,17 @@ const getProductsList = async () => {
     });
 }
 
+const getProduct = async (id) => {
+  return fetch(`https://fakestoreapi.com/products/${id}`)
+    .then((response) => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        throw new Error("Failed to fetch products!");
+      }
+    });
+}
+
 const x = 10;
 let y = x * 2;
 // const data =  getData();
@@ -24,9 +35,35 @@ getProductsList().then(data => {
 console.log(y);
 console.log("Good Bye!");
 
+// async function name(params) { 
+// }
+
+const loadDataV2 = async () => {
+  const data = await getProductsList();
+  const firstProductId = data[0].id;
+  const firstProduct = await getProduct(firstProductId);
+  console.log(firstProduct.description);
+
+  const prodList = document.getElementById('products');
+  data.forEach(product => {
+    prodList.insertAdjacentHTML('beforeend', `
+        <div style="border:1px solid black; margin:20px;">
+          <h2>${product.title}</h2>
+          <img width="70" src="${product.image}" alt="img"/>
+        </div>
+        `);
+  });
+
+  console.log("After Await!");
+}
 
 const loadData = () => {
   getProductsList().then(data => {
+    const firstProductId = data[0].id;
+    getProduct(firstProductId).then(product => {
+      console.log(prodList.description);
+    });
+
     const prodList = document.getElementById('products');
     data.forEach(product => {
       prodList.insertAdjacentHTML('beforeend', `
@@ -37,6 +74,8 @@ const loadData = () => {
         `);
     });
   });
+
+  console.log("After .then")
 }
 
 // const getRand = () => {
