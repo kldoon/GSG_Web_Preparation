@@ -6,6 +6,7 @@ body {
 }
 
 .container {
+  position: relative;
   max-width: 375px;
   margin: 0 auto;
   height: 95vh;
@@ -38,8 +39,8 @@ ul.actions li {
 /************** Posts List ********/
 .gradient-box {
   box-sizing: border-box;
-  max-width: 43.5px;
-  max-height: 43.5px;
+  max-width: 42px;
+  max-height: 42px;
   color: #FFF;
   background-clip: padding-box;
   position: relative;
@@ -109,8 +110,8 @@ main.list .post {
 }
 
 .post header .av-title img {
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -166,13 +167,13 @@ main.list .post {
 
 /**    Add Modal    **/
 .modal-content {
-  position: fixed;
+  position: relative;
   top: 50px;
-  margin: 10px;
+  margin: 0 auto;
   padding: 10px;
   background-color: #fff;
   border: 2px solid #2b2b2b;
-  width: 330px;
+  width: 85%;
   height: 50vh;
   z-index: 20;
 }
