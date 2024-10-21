@@ -12,14 +12,24 @@
   <!-- <script src="./script4.js"></script> -->
   <!-- <script src="./script5.js"></script> -->
   <!-- <script src="./script6.js"></script> -->
-  <script src="./script7.js"></script>
+  <!-- <script src="./script7.js"></script> -->
+  <script src="./script8.js"></script>
 </head>
 
-<body>
+<body onload="loadData()">
   <h1>JavaScript Tutorial</h1>
   <button onclick="loadData();">Load Data</button>
   <button onclick="loadDataV2();">Load Data V2</button>
   <div id="products"></div>
+
+  <hr>
+  <div style="font-size: 30px;">
+    <button onclick="increaseCounter1()" style="font-size: 30px;">+1 c1</button>
+    <button onclick="increaseCounter2()" style="font-size: 30px;">+1 c2</button>
+    <button onclick="resetCounters()" style="font-size: 30px;">Reset</button>
+    <div id="counter-value1">0</div>
+    <div id="counter-value2">0</div>
+  </div>
 </body>
 
 </html>

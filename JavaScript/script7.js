@@ -22,6 +22,34 @@ const getProduct = async (id) => {
     });
 }
 
+const addProduct = async () => {
+  // Read data from form
+  const data = {
+    id: 101,
+    title: "Elegant Backpack, Fits 15 Laptops",
+    price: 180,
+    description: "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+    category: "men's clothing",
+    image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    rating: {
+      rate: 4.1,
+      count: 70
+    }
+  };
+
+  const res = await fetch({
+    host: 'https://fakestoreapi.com/products',
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  });
+
+  // if(res.status === 201)
+  //    console.log("Product added successfully")
+}
+
 const x = 10;
 let y = x * 2;
 // const data =  getData();
