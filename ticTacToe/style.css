@@ -1,0 +1,109 @@
+body {
+  background-color: #0e0e0e;
+  font-family: "Quicksand", sans-serif;
+}
+
+.board {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 100px auto 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(171, 20, 109);
+  background: linear-gradient(312deg, rgba(171, 20, 109, 1) 0%, rgba(95, 15, 190, 1) 100%);
+}
+
+.board .result {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(35 8 38 / 89%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: #ffeff6;
+  font-weight: 600;
+}
+
+.board .result button {
+  all: unset;
+  font-size: 25px;
+  background-color: #6b2d41;
+  color: #fff;
+  padding: 5px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.board .result button:hover {
+  /* background-color: #96425c; */
+  box-shadow: inset 0px 2px 11px 2px #b54d6d !important;
+}
+
+.board .result button:active {
+  background-color: #6e3547;
+}
+
+.board .cell {
+  all: unset;
+  display: flex;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.501);
+  width: 31%;
+  height: 31%;
+  flex-grow: 0;
+  border-radius: 20px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 136px;
+  font-weight: 600;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.board .cell.X {
+  text-shadow:
+    0 0 0px #fff,
+    0 0 15px #2a5fe0,
+    0 0 20px #2a5fe0,
+    0 0 25px #2a5fe0,
+    0 0 30px #2a5fe0,
+    0 0 35px #2a5fe0;
+}
+
+.board .cell.O {
+  text-shadow:
+    0 0 0px #fff,
+    0 0 15px #d7225a,
+    0 0 20px #d7225a,
+    0 0 25px #d7225a,
+    0 0 30px #d7225a,
+    0 0 35px #d7225a;
+}
+
+.results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 80px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 40px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.results #turn {
+  width: 125px;
+}
+
+.results span {
+  text-shadow: 0px 0px 13px #c8768f;
+}
